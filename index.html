@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <style>
+        nav {
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            width: 350px;
+            height: 40px;
+            border-radius: 12px;
+            padding: 0 10px;
+            margin: 20px auto;
+            font-family: 'Arial', sans-serif;
+            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
+        }
+        nav a {
+            position: relative;
+            text-decoration: none;
+            color: #fff;
+            font-weight: 500;
+            font-size: 11px;
+            padding: 5px 0;
+            transition: color 0.3s ease, transform 0.3s ease;
+        }
+        nav a::after {
+            content: "";
+            position: absolute;
+            width: 0;
+            height: 2px;
+            left: 0;
+            bottom: 0;
+            background: linear-gradient(90deg, #f7f7f7, ##f7f7f7);
+            transition: width 0.4s ease;
+            box-shadow: 0 0 5px #f7f7f7, 0 0 10px #f7f7f7;
+            border-radius: 4px;
+        }
+        nav a:hover::after {
+            width: 100%;
+        }
+        nav a:hover {
+            color: #f7f7f7;
+            transform: scale(1.03) translateY(-2px);
+        }
+    </style>
+</head>
+<body>
+    <nav>
+        <a href="https://foolish-clarity-358763.framer.app/">Beranda<a> |
+        <a href="https://foolish-clarity-358763.framer.app/aboutus-of-nerdix-ai">Tentang Kami<a> |
+        <a href="https://foolish-clarity-358763.framer.app/explore-plans">Paket<a> |
+        <a href="https://foolish-clarity-358763.framer.app/contactsection">Kontak<a> |
+        <a href="https://foolish-clarity-358763.framer.app/faqofnerdixai">Tanya Jawab<a> 
+    </nav>
+</body>
+</html>
